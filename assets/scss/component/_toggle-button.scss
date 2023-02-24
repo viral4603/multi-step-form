@@ -1,0 +1,44 @@
+.plan-duration-lable {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: hsl(213deg, 96%, 18%);
+  border-radius: 2rem;
+  }
+  
+  .plan-duration-lable::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 17%;
+    left: 6%;
+    transition: 0.5s;
+  }
+  .plan-yearly {
+    display: none;
+  }
+  
+  #plan-duration:checked~ {
+    & .plan-period {
+      .plan-duration-lable::before {
+        left: 60%;
+        background: #fff;
+      } 
+      .plan-month {
+        color: $light !important;
+      }
+      .plan-year {
+        color: $primary !important;
+      }
+    }
+    & .cards-wrapper {
+      .plan-yearly {
+        display: block;
+      }
+    }
+  }

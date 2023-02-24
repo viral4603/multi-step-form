@@ -1,0 +1,35 @@
+.categories-item {
+    color: $white !important;
+}
+
+//shirnk navbar on menu click
+#close-menu:checked+.sidebar {
+    flex-basis: 70px
+}
+
+#close-menu:checked+.sidebar {
+    .brand-title {
+        transform: translateX(-140px);
+    }
+
+    .menu {
+        transform: translateX(-100px)
+    }
+
+    .nav-text {
+        transform: translateX(140px);
+    }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.4s ease-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+.card {
+    cursor: pointer;
+}

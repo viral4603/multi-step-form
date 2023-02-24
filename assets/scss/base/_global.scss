@@ -1,0 +1,18 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: $font-family-base;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.wrapper {
+    background-image: url("~@/assets/product-images/background-image.jpg");
+    background-size: cover;
+}
+.container-wrapper {
+    max-width: 1024px;
+    margin: auto;
+}
