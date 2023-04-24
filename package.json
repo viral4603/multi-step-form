@@ -1,0 +1,23 @@
+{
+  "name": "multi-steper-form",
+  "version": "1.0.0",
+  "description": "stepper form",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viral4603/multi-step-form.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viral4603/multi-step-form/issues"
+  },
+  "homepage": "https://github.com/viral4603/multi-step-form#readme"
+}
