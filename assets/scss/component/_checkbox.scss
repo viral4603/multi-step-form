@@ -1,0 +1,25 @@
+.custome-checkbox {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 0.2rem;
+    border: 1px solid $border-color;
+}
+.form-info input:checked + .pick-adds {
+    border-color: $secondary !important;
+    .custome-checkbox {
+        background-color: $secondary;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            width: 5px;
+            height: 12px;
+            border: solid hsl(0, 0%, 100%);
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}

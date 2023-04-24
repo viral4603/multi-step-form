@@ -1,0 +1,31 @@
+$primary : rgb(2, 41, 90);
+$secondary : hsl(243, 100%, 62%);
+$info : hsl(206, 94%, 87%);
+$danger : hsl(354, 84%, 57%);
+$success: hsl(229, 24%, 87%);
+$warning: #945707;
+$light: #9699ab;
+$dark: #343a40;
+$white : hsl(0, 0%, 100%);
+$magnolia:hsl(217, 100%, 97%);
+
+//nav link color 
+$navbar-light-hover-color:$secondary;
+$border-color:$success;
+$nav-link-color :  $primary;
+$nav-link-active-color : $white;
+$nav-link-hover-color : $white;
+$input-border-color:$border-color;
+$input-focus-border-color:$secondary;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "magnolia":   $magnolia
+);
