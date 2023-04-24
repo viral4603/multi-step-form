@@ -1,0 +1,89 @@
+@import "../assets/scss/base/index";
+
+@import "../assets/scss/vendor/bootstrap-base";
+@import "../assets/scss/vendor/bootstrap-components";
+@import "../assets/scss/utilites/index";
+
+@import "../assets/scss/layout/index";
+@import "../assets/scss/component/index";
+
+.form-wrapper {
+    background-color: $white;
+    border-radius: 0.75rem;
+    .sidebar {
+        flex-basis: 300px;
+        background-image: url('../images/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        border-radius: 0.75rem;
+        .step-count {
+            height: 40px;
+            width: 40px;
+            transition: all 0.4s;
+        }
+        .step-count-title{
+            letter-spacing: 1px;
+        } 
+        .step-number {
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+        }
+        & .active .step-count,.nav-link:hover .step-count{
+            & .count-number {
+                color: $primary !important;
+            }
+            background-color: $info;
+            border-color: $info !important;
+        }
+    }
+    .form-main {
+        min-height: 570px;
+        padding: 0rem 4.5rem 0rem 6rem;
+        .back-button {
+            transition: all 0.3s;
+            &:hover{
+                color: $primary !important;
+            }
+        }
+        .plan-card{
+            transition: all 0.3s;
+            &.active,
+            &:hover{
+                border-color: $secondary !important;
+            }
+            &.active {
+                background-color: rgba($success,0.3);
+            }
+        }
+        .pick-adds{
+            transition: all 0.3s;
+            &:hover {
+                border-color: $secondary !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .form-wrapper {
+        .form-main {
+            padding: 0;
+        } 
+        background-color: transparent;
+        height: 100%;
+        .sidebar {
+            flex-basis: 270px;
+            border-radius: 0px;
+            background-image: url('../images/bg-sidebar-mobile.svg');
+        }
+        .form-main {
+            margin-top: -120px;
+        }
+        .form-info {
+            border-radius: 10px;
+            background-color: $white;
+            padding: 1.5rem 2rem !important;
+        }
+    }
+  }
