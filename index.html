@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="main h-100 w-100 bg-magnolia d-block">
+    <main class="main h-100 w-100 bg-magnolia d-block" role="main">
         <div class="container-wrapper d-lg-flex align-items-center h-100">
             <!-- form-wrapper-start -->
             <div class="form-wrapper w-100 d-flex flex-column flex-lg-row p-0 p-lg-4 shadow-sm">
@@ -80,53 +80,51 @@
 
                 <!-- form-start -->
                 <form class="form-main h-100 flex-grow-1 d-flex flex-column justify-content-between">
-                    <div class="form-info px-5 px-lg-0 py-5 py-lg-3 mx-3 mx-lg-0 mb-5">
+                    <div class="form-info px-5 px-lg-0 py-5 py-lg-3 mx-3 mx-lg-0 mb-5" role="heading info">
                         <h2 class="text-primary fw-semibold pt-3 mb-2">Personal info</h2>
                         <p class="text-light mb-4">Please provide your name, email address, and phone number.</p>
                         <div class="mb-4 pt-2">
                             <div class="d-flex justify-content-between">
-                                <h6 class="text-primary"><label for="exmapleInputName" class="form-label">Name</label>
-                                </h6>
-                                <h6><label class="form-label error d-none text-danger">
-                                        This field is required
-                                    </label></h6>
+                                <label for="exmapleInputName" class="form-label text-primary fs-6 fw-semibold">Name</label>
+                                <label class="form-label error d-none text-danger">
+                                    This field is required
+                                </label>
                             </div>
                             <input type="text" class="form-control fw-bold text-primary" name="userName"
                                 id="exmapleInputName" placeholder="e.g. Stephen King">
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between">
-                                <h6 class="text-primary"> <label for="exampleInputEmail1" class="form-label">Email
-                                        address</label></h6>
-                                <h6> <label class="form-label error d-none text-danger">
-                                        This field is required
-                                    </label></h6>
+                                <label for="exampleInputEmail1" class="form-label text-primary fs-6 fw-semibold">Email
+                                    address</label>
+                                <label class="form-label error d-none text-danger">
+                                    This field is required
+                                </label>
                             </div>
                             <input type="email" class="form-control fw-bold text-primary" id="exampleInputEmail1"
                                 placeholder="e.g. stephenking@lorem.com">
                         </div>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between">
-                                <h6 class="text-primary"><label for="exmapleInputPhone" class="form-label">
-                                        Phone Number
-                                    </label></h6>
-                                <h6><label class="form-label error d-none text-danger">This field is required </label>
-                                </h6>
+                                <label for="exmapleInputPhone" class="form-label text-primary fs-6 fw-semibold">
+                                    Phone Number
+                                </label>
+                                <label class="form-label error d-none text-danger">This field is required </label>
                             </div>
                             <input type="text" class="form-control fw-bold text-primary" id="exmapleInputPhone"
                                 placeholder="e.g. +1 234 567 890" maxlength="10">
                         </div>
                     </div>
                     <div class="text-end px-3 px-lg-0 bg-white py-3 py-lg-0">
-                        <a class="text-white text-decoration-none"><button type="button"
-                                class="btn btn-primary fw-semibold" onclick="onSubmitForm(event)">Next Step</button></a>
+                        <button type="button" class="btn btn-primary fw-semibold" onclick="onSubmitForm(event)">Next
+                            Step</button></a>
                     </div>
                 </form>
                 <!-- form-end -->
             </div>
             <!-- form-wrapper-end -->
         </div>
-    </div>
+    </main>
     <script src="./assets/js/index.js"></script>
 </body>
 
